@@ -6,7 +6,7 @@ import Bookings from "./components/Bookings";
 import "./App.css";
 import SearchResults from "./components/SearchResults";
 import Footer from "./components/Footer";
-
+import Restaurant from "./components/Restaurant";
 const hotelInfo = [
   "123 Fake Street, London, E1 4UD",
   "hello@fakehotel.com",
@@ -19,8 +19,9 @@ const App = () => {
       <Heading />
       <Bookings />
       <InfoCard />
-      <SearchResults FakeBookings={fakeBookings} />
-      <Footer HotelInfo={hotelInfo} />
+
+      <Restaurant />
+      <Footer hotelInfo={hotelInfo} />
     </div>
   );
 };
